@@ -4,34 +4,63 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
-		<h1>Page Template</h1>
-		<div class="links">
-			<a href="home.html">Home</a>
-			<a href="about.html">About us</a>
-			<a href="contacts.html">Contact</a>
-		</div>
-	</header>
-	<main>
-		<aside>
-			<h2>Правая колонка или right-sidebar - правая боковая панель</h2>
-			<div class="aside-content">
-				<p>Новости</p>
-				<p>Под рекламу</p>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">Navbar</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">About us <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+	<main class="container mb-3">
+		<div class="row">
+			<div class="col-md-12 col-lg-9 pt-3">
+				<div class="card">
+				  <div class="card-header">
+				    Фремворк bootstrap
+				  </div>
+				  <div class="card-body">
+				  	Фремворк bootstrap в составе js, font и css необходимо разархивировать в директорию, в которой находится
+				  	веб страничка index.html. Далее, к страничке index.html надо подключить css, font и js.
+				  </div>
+				</div>
 			</div>
-		</aside>
-		<article>
-			<h2>Мой контент</h2>
-			<p>Контент</p>
-			<h2>Дополнительные материалы</h2>
-			<p>Вспомогальеный или дополнительый раздел страницы</p>
-		</article>
+			<div class="col pt-3">
+				<div class="card">
+					<div class="card-body">
+						<p>Цель работы</p>
+						<p>Создать методику разработки веб-страницы с адаптивным дизайном на основе Bootstrap
+						в редакторе Sublime. Вести историю измений с  применения системы контроля версий Git.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
-	<footer>
-		Copyright &copy; 2017. All Rights Reserved
+	<footer class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+				  <div class="card-body">
+				  	Copyright &copy; 2017. All Rights Reserved	
+				  </div>
+				</div>
+			</div>
+		</div>
 	</footer>
 </body>
 </html>
