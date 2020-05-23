@@ -1,0 +1,25 @@
+body {
+	width: 1000px;
+	background: #ffffd9;
+	font : bold 120% Verdana, Arial, Helvetica, sans-serif;
+}
+
+header {
+	height: 150px;
+}
+
+footer {
+	height: 100px;
+}
+
+aside {
+	width: 250px;
+}
+
+a {
+	color: #ff0000;
+}
+
+a:visited {
+	color: #0000ff;
+}
