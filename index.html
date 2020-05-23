@@ -16,13 +16,13 @@
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    <ul class="navbar-nav mr-auto">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">About us <span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="/inform.html">About us <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="/articles.html">Contact <span class="sr-only">(current)</span></a>
 	      </li>
 	    </ul>
 	  </div>
@@ -32,19 +32,21 @@
 			<div class="col-md-12 col-lg-9 pt-3">
 				<div class="card">
 				  <div class="card-header">
-				    Фремворк bootstrap
+				    <h1>Internet of Recognition <sup>TM</sup> (IOR) - Интернет распознавания</h1>
 				  </div>
 				  <div class="card-body">
-				  	Фремворк bootstrap в составе js, font и css необходимо разархивировать в директорию, в которой находится
-				  	веб страничка index.html. Далее, к страничке index.html надо подключить css, font и js.
+				  	Вы слышали о "Интернет вещей" (IoT), и, возможно, "Интернет обо всем" (MoP). Но
+				  	"Интернет распознавания" (IoR <sup>tm</sup>), вероятно, является новым для вас.
+				  	И тем не менее, это возможно...
+				  	IoT является большой очень большой
 				  </div>
 				</div>
 			</div>
 			<div class="col pt-3">
 				<div class="card">
-					<div class="card-body">
-						<p>Цель работы</p>
-						<p>Создать методику разработки веб-страницы с адаптивным дизайном на основе Bootstrap
+					<div class="card-body news">
+						<h3>Цель работы</h3>
+						<p class="pull-left">Создать методику разработки веб-страницы с адаптивным дизайном на основе Bootstrap
 						в редакторе Sublime. Вести историю измений с  применения системы контроля версий Git.</p>
 					</div>
 				</div>
@@ -62,5 +64,29 @@
 			</div>
 		</div>
 	</footer>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script>
+		$(document).ready(function() {
+			$('#but').click(function() {
+            	alert('Почему мы должны использовать jQuery?');
+        	});
+
+        	$(".card-header>h1").css("color", "#666666");
+			$("h3").css("color", "#666666").css("text-align", "left").css("font-size", "1.0em");
+			$(".news1>p").css("font-size", "0.90em");
+ 			$("p.pull-left").css("color", "blue");
+    	});
+    </script>
+	<input type="button" id="but" value="Click" />
+	<script type="text/javascript">
+	Y=new Date();
+		var Day = new Array("воскресенье","понедельник","вторник","среда","четверг","пятница","суббота");
+		var Month = new Array("января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря");
+		document.write("Сегодня: " + Day[Y.getDay()] + ", " + Y.getDate() + " " + Month[Y.getMonth()] + " " + Y.getFullYear() + " "+ ", ")
+	</script>
+	<script type="text/javascript">
+		W = new Date();
+		document.write("Время: "+W.getHours()+":"+W.getMinutes())
+	</script>
 </body>
 </html>
